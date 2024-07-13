@@ -84,7 +84,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: lib
+          name: lib_${{ github.run_id }}
           path: |
             Build/${{ matrix.build_config }}
 
